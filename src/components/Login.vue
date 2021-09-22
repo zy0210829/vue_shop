@@ -87,7 +87,6 @@ export default {
 
         //将登录成功的之后的token保存到客户端的sessionStorage中，这里为了项目中除了登录之外的API接口，必须在登录之后才能访问
         //token只应在当前网站打开期间生效。所以将token保存在sessionStorage中
-        console.log(res)
         window.sessionStorage.setItem("token",res.data.token)
         //通过$router 跳转到后台主页
         this.$router.push('/home')

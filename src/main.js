@@ -12,6 +12,13 @@ import './assets/fonts/iconfont.css'
 import axios from 'axios'
 //axios的默认请求路径地址
 axios.defaults.baseURL="http://127.0.0.1:8888/api/private/v1/"
+//请求拦截器
+axios.interceptors.request.use( config =>{
+  //为请求头对象添加了token验证的Authorization字段
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
+
 /*在vue的原型里面添加全局http*/
 Vue.prototype.$http=axios
 
