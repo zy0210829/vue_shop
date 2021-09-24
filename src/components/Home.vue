@@ -128,7 +128,7 @@ export default {
     //请求所有的菜单数据
     async getMenuList(){
       const {data:res} = await this.$http.get('menus')
-      console.log(res)
+
       //如果登录状态码不是200 就返回错误信息
       if(res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.menuList = res.data

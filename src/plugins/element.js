@@ -7,10 +7,11 @@ import {Input} from 'element-ui'
 //导入弹框提示框  需要全局挂载
 import {Message}from 'element-ui'
 
-import {Container,Header,Aside,Main,Row,Col,Switch,Tooltip,Pagination} from 'element-ui'
+import {Container,Header,Aside,Main,Row,Col,Switch,Tooltip,Pagination,Tag} from 'element-ui'
 
-import {Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem,Card,Table,TableColumn,Dialog} from 'element-ui'
+import {Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem,Card,Table,TableColumn,Dialog,Tree} from 'element-ui'
 
+import {Select,Option} from 'element-ui'
 import { MessageBox } from 'element-ui';
 
 Vue.use(Button)
@@ -35,6 +36,11 @@ Vue.use(Card)
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
+
 
 //全局挂载  信息提示框
 Vue.prototype.$message = Message
