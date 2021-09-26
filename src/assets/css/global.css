@@ -21,3 +21,6 @@ html,body,#app{
 .el-icon-circle-check{
   color: #4ed413;
 }
+.el-cascader-panel{
+  height: 200px;
+}

@@ -403,6 +403,7 @@ export default {
 
     //弹框询问用户是否删除用户信息
     async removeUserById(id){
+      //$confirm  全局弹框   result是接收弹框的返回值
       const result = await this.$confirm('此操作将永久删除该用户, 是否继续?', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',

@@ -19,6 +19,16 @@ axios.interceptors.request.use( config =>{
   return config
 })
 
+//导入插件TreeTable
+import TreeTable from 'vue-table-with-tree-grid'
+//全局注册
+Vue.component('tree-table',TreeTable)
+
+
+
+
+
+
 /*在vue的原型里面添加全局http*/
 Vue.prototype.$http=axios
 
