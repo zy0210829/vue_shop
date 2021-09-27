@@ -11,7 +11,7 @@ import {Container,Header,Aside,Main,Row,Col,Switch,Tooltip,Pagination,Tag} from 
 
 import {Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem,Card,Table,TableColumn,Dialog,Tree} from 'element-ui'
 
-import {Select,Option,Cascader} from 'element-ui'
+import {Select,Option,Cascader,Alert,Tabs,TabPane} from 'element-ui'
 
 //导入弹框
 import { MessageBox } from 'element-ui';
@@ -44,6 +44,13 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+
+
+
+
 
 //全局挂载  信息提示框
 Vue.prototype.$message = Message

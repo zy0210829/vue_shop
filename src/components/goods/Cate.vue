@@ -422,7 +422,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.el-card{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
 
+}
 .treeTable{
   margin-top: 15px;
 }
